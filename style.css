@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poiret+One&display=swap');
+
+body {
+    background-color: white;
+    
+    
+    
+}
+
+* {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+a {
+    color: black;
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    font-weight: 100;
+    text-decoration:none;
+
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    color: aliceblue;
+    font-weight: 100;
+
+}
+
+h5 {
+    font-size: 40px;
+    font-family: 'Poiret One', cursive;
+}
+
+.full-grid {
+    display: grid;
+    grid-template-columns: 0px 40px 1fr;
+    grid-template-rows: 100px 1fr 1fr ;
+    grid-template-areas:
+    "header header header"
+    "aside button main"
+    "footer footer footer" ;
+}
+
+/* .full-grid * {
+    border: 3px solid black;
+} */
+
+.myName {
+    grid-area: header;
+
+}
+
+.nav {
+    grid-area: aside;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    background-color: aliceblue;
+    width: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    border: 1px solid black;
+}
+
+.open-nav {
+    grid-area: button;
+    border-radius: 5px;
+    position: relative;
+    left: 0px;
+    transition: all 0.5s ease;
+}
+
+.info {
+    grid-area: main;
+    
+}
+.grid-main{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.aboutMe {
+    background-color: hwb(250 28% 70%);
+    border-radius: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot {
+    grid-area: footer;
+    /* border: 1px solid black; */
+}
+
+.slider {
+    width: 1000px;
+    height: 1000px;
+    overflow: hidden;
+    margin: 30px auto;
+
+}
+
+.slider-line {
+    display: flex;
+    position: relative;
+    left: -2000px;
+    z-index: 3;
+}
+
+.buts {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+    top: -80px ;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content:center ;
+    gap: 10px;
+}
+
+.buts:hover {
+    background-color: rgb(219, 0, 0);
+}
+
